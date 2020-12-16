@@ -158,4 +158,10 @@
 
 * **Notes:**
 
-  <_Todo...._>
+    1. The API currently favors summarization in the range of 5-40%, so internal adjustments are in place
+    to limit larger values that cause summarization to lose its value.
+    
+    2. The actual length of summary is lkely to be closer to specified for large documents.  For the latter, the
+    AI doesn't have much room, so the summary length can be quite different.
+    
+    <_Todo...._>
