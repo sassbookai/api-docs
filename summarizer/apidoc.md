@@ -154,14 +154,14 @@
    
     ```
     Note: In the example above , although `targetPercent` is supplied, it will be ignored because
-    `target` is specified as `words`.
+    `target` is specified as `words` and `targetWords` will be honored.
 
 * **Notes:**
 
     1. The API currently favors summarization in the range of 5-40%, so internal adjustments are in place
     to limit larger values that cause summarization to lose its value.
     
-    2. The actual length of summary is lkely to be closer to specified for large documents.  For the latter, the
+    2. The actual length of summary is lkely to be closer to specified for large documents.  For small documents, the
     AI doesn't have much room, so the summary length can be quite different.
     
     <_Todo...._>
