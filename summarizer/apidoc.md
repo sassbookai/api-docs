@@ -148,7 +148,7 @@
     text="..."
     
     curl -i -X POST  -H "Content-Type: application/json"  \
-    -H "Authorization: Bearer $KEY" \
+    -H "Authorization: Bearer $API_KEY" \
     -d '{"sumSrc": "'"$text"'", "target": "words", "method": "abstractive", "targetPercent": 10, "targetWords": 80}' \
     https://sassbook.com/api/ext/summarize/v1a
    
