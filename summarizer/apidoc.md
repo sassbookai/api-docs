@@ -163,5 +163,3 @@
     
     2. The actual length of summary is lkely to be closer to specified for large documents.  For small documents, the
     AI doesn't have much room, so the summary length can be quite different.
-    
-    <_Todo...._>
