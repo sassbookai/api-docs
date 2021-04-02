@@ -10,7 +10,7 @@
 
   `/api/ext/summarizer/v1a`
   
-  The base url is https://sassbook.com.
+  The base URL is https://sassbook.com.
 
 * **Method:**
   
@@ -61,7 +61,7 @@
     If you make multiple API calls with the same original text, but with different
     settings, it is more efficient to just use the hash for subsequent calls. You
     can also save computing costs if you wish to repeat a previous call. Note 
-    that this is not guarnteed to work if the call is made much later.
+    that this is not guaranteed to work if the call is made much later.
     
     If the source text is unavailable, the call fails with error code 204.
     
@@ -116,7 +116,7 @@
     
 
   * **Code:** 204 <br />
-    This happens when you supply a hash but the the API is unable to locate the original
+    This happens when you supply a hash but the API is unable to locate the original
     source text. You should check for this code and call again with the original text.
  
 * **Error Response:**
@@ -161,5 +161,5 @@
     1. The API currently favors summarization in the range of 5-40%, so internal adjustments are in place
     to limit larger values that cause summarization to lose its value.
     
-    2. The actual length of summary is lkely to be closer to specified for large documents.  For small documents, the
+    2. The actual length of summary is likely to be closer to specified for large documents.  For small documents, the
     AI doesn't have much room, so the summary length can be quite different.
