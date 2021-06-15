@@ -1,11 +1,10 @@
-**Sassbook AI Summarizer API - Alpha version**
+**Sassbook AI Summarizer API**
 ----
-  The alpha version of the API enables developers to access similar functionality as that available with 
+  The API enables developers to access similar functionality as that available with 
   the web application. The API provides a controllable interface to state-of-the-art summarization for 
   customers needing automation of their workflows.
   
-  This is an initial draft.
-
+  
 * **Endoint**
 
   `/api/ext/summarizer/v1a`
