@@ -1,4 +1,4 @@
-# Basic Sassbook AI Summarizer API functionality in JavaScript (Node.js)
+# Basic Sassbook AI Summarizer API usage in JavaScript (Node.js)
 
 The API is intended to be used from server-side.
 
