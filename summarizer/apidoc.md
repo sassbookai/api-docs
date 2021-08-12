@@ -1,16 +1,15 @@
-**Sassbook AI Summarizer API - Alpha version**
+**Sassbook AI Summarizer API**
 ----
-  The alpha version of the API enables developers to access similar functionality as that available with 
+  The API enables developers to access similar functionality as that available with 
   the web application. The API provides a controllable interface to state-of-the-art summarization for 
   customers needing automation of their workflows.
   
-  This is an initial draft.
-
+  
 * **Endoint**
 
-  `/api/ext/summarizer/v1a`
+  `/api/ext/summarizer/v1`
   
-  The base url is https://sassbook.com.
+  The base URL is https://sassbook.com.
 
 * **Method:**
   
@@ -61,7 +60,7 @@
     If you make multiple API calls with the same original text, but with different
     settings, it is more efficient to just use the hash for subsequent calls. You
     can also save computing costs if you wish to repeat a previous call. Note 
-    that this is not guarnteed to work if the call is made much later.
+    that this is not guaranteed to work if the call is made much later.
     
     If the source text is unavailable, the call fails with error code 204.
     
@@ -116,7 +115,7 @@
     
 
   * **Code:** 204 <br />
-    This happens when you supply a hash but the the API is unable to locate the original
+    This happens when you supply a hash but the API is unable to locate the original
     source text. You should check for this code and call again with the original text.
  
 * **Error Response:**
@@ -148,20 +147,18 @@
     text="..."
     
     curl -i -X POST  -H "Content-Type: application/json"  \
-    -H "Authorization: Bearer $KEY" \
+    -H "Authorization: Bearer $API_KEY" \
     -d '{"sumSrc": "'"$text"'", "target": "words", "method": "abstractive", "targetPercent": 10, "targetWords": 80}' \
     https://sassbook.com/api/ext/summarize/v1a
    
     ```
     Note: In the example above , although `targetPercent` is supplied, it will be ignored because
-    `target` is specified as `words`.
+    `target` is specified as `words` and `targetWords` will be honored.
 
 * **Notes:**
 
     1. The API currently favors summarization in the range of 5-40%, so internal adjustments are in place
     to limit larger values that cause summarization to lose its value.
     
-    2. The actual length of summary is lkely to be closer to specified for large documents.  For the latter, the
+    2. The actual length of summary is likely to be closer to specified for large documents.  For small documents, the
     AI doesn't have much room, so the summary length can be quite different.
-    
-    <_Todo...._>
