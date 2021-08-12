@@ -155,9 +155,9 @@
     Note: In the example above , although `targetPercent` is supplied, it will be ignored because
     `target` is specified as `words` and `targetWords` will be honored.
     
-    The `samples` directory has minimal examples in JavaScript and Python (3).
-
-* **Notes:**
+    The [samples](./samples) directory has minimal examples in JavaScript and Python (3).
+    
+  * **Notes:**
 
     1. The API currently favors summarization in the range of 5-40%, so internal adjustments are in place
     to limit larger values that cause summarization to lose its value.
