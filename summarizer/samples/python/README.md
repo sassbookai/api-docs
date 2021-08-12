@@ -1,4 +1,4 @@
-**Basic API functionality in Python 3.**
+# Basic Sassbook AI Summarizer API usage in Python 3.
 
 Only uses the `requests` package.
 
