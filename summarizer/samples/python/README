@@ -1,0 +1,11 @@
+Basic API functionality in Python 3.
+
+Only uses the requests package
+
+pip install requests
+
+To test the API, replace the placeholder key in source code and run:
+
+python test.py
+
+
