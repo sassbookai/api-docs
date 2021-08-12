@@ -154,6 +154,8 @@
     ```
     Note: In the example above , although `targetPercent` is supplied, it will be ignored because
     `target` is specified as `words` and `targetWords` will be honored.
+    
+    The `samples` directory has minimal examples in JavaScript and Python (3).
 
 * **Notes:**
 
