@@ -15,4 +15,5 @@ node test.js
 ```
 
 [Sassbook AI Summarizer](https://sassbook.com/ai-summarizer "AI summary genenerator supporting both extractive and abstractive summarization")
-[Sassbook AI](https://sassbook.com "Sassbook AI Summarizer and AU Writer - State-of-the-art Content Automation with AI")
+
+[Sassbook AI](https://sassbook.com "Sassbook AI Summarizer and AI Writer - State-of-the-art Content Automation with AI")
