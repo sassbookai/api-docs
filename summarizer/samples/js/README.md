@@ -1,4 +1,4 @@
-**Basic Sassbook API Summarizer API functionality in JS (Node.js)**
+# Basic Sassbook AI Summarizer API functionality in JavaScript (Node.js)
 
 The API is intended to be used from server-side.
 
@@ -8,7 +8,7 @@ Uses the `node-fetch` package.
 npm install
 ```
 
-To test the API, replace the placeholder key in source code and run:
+To test the API, replace the placeholder API key in source code and run:
 
 ```
 node test.js
