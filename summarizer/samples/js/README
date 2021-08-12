@@ -1,12 +1,15 @@
-Basic API functionality in JS (Node.js)
+**Basic API functionality in JS (Node.js)**
 
 The API is intended to be used from server-side.
 
-Uses the node-fetch package.
+Uses the `node-fetch` package.
 
+```
 npm install
+```
 
 To test the API, replace the placeholder key in source code and run:
 
+```
 node test.js
-
+```
