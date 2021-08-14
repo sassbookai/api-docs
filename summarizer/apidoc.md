@@ -7,7 +7,7 @@
   
 * **Endoint**
 
-  `/api/ext/summarizer/v1`
+  `/api/ext/summarize/v1`
   
   The base URL is https://sassbook.com.
 
