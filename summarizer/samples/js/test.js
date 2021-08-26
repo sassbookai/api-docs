@@ -41,13 +41,13 @@ fetch(api_end_point, {
     ----------
     ${data.summary}`);
   }
-    else {
-      // Handle error code, especially 204 when using hash
-      // ...
-      console.log(`API returned error: Code: ${data.code}
-      Message: ${data.message}`);
-    }
-  })
+  else {
+    // Handle error code, especially 204 when using hash
+    // ...
+    console.log(`API returned error: Code: ${data.code}`);
+    console.log(`Message: ${data.message}`);
+  }
+})
   .catch((error) => {
     // Exception thrown during API call
     console.error('Error:', error);
