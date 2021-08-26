@@ -49,7 +49,7 @@
     
     Must be empty if generating a continuation, from `priorText` See **priorText**.
 
-    The maximum allowed words for `promptText` is **128**. A minimum of 15-30 words is
+    The maximum number of allowed words for `promptText` is **128**. A minimum of 15-30 words is
     recommended.
     
     __`priorText=[string]`__
@@ -62,7 +62,7 @@
     So, an API call supplies a valid seed text either in `promptText` or in 
     `priorText`, but not both. Otherwise, the call ends with a 422 error.
 
-    The maximum allowed words for `priorText` is **500**.
+    The maximum number of allowed words for `priorText` is **500**.
   
     __`genLength=[number]`__ `optional`
 
@@ -84,7 +84,7 @@
 
     (`var_low`, `var_,medium`, `var_high`). The default fallback value is `var_medium`.
     
-    `var_low` tends to generate more predicable, conservative text best suited to
+    `var_low` tends to generate more predictable, conservative text best suited to
     factual content. `var_high` produces more imaginative content, more beneficial
     for fiction or to generate ideas. `var_medium` is sort of in the middle.
     
@@ -106,7 +106,7 @@
     whether completion or continuation and is returned from the previous call
     response (`genMetaCode`). The code is in encoded form.
 
-    This code is intended to be used for related generations, but could be used
+    This code is intended to be used for related generations but could be used
     for new completions in related contexts. Depending on your application
     domain, you may choose to use it or not, subject to its observed impact on
     the quality of generations. **See `enableAnalytics`**.

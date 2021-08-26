@@ -116,7 +116,7 @@
     
 
   * **Code:** 204 <br />
-    This happens when you supply a hash but the API is unable to locate the original
+    This happens when you supply a hash, but the API is unable to locate the original
     source text. You should check for this code and call again with the original text.
  
 * **Error Response:**
@@ -164,4 +164,7 @@
     1. The API currently favors summarization in the range of 5-40%, so internal adjustments are in place
     to limit larger values that cause summarization to lose its value.
     
-    2. The actual length of summary is likely to be closer to specified for large documents.For small documents, the AI doesn't have much room, so the summary length can be quite different.
+    2. The actual length of summary is likely to be closer to specified for
+    large documents.
+    For small documents, the AI doesn't have much room, so the summary length
+    can be quite different.
