@@ -23,7 +23,7 @@ length = 90  # Defaults to 50, minimum 20, maximum capped at Premium plan limits
 numGens = 3  # Desired number of candidate generations for this call
 creativity = "var_low"  # Prefer more predictable, conservative, completions
 metaCode = ""  # Encoded genMetaCode from the previous generation or empty
-doAnalytics = False  # Disable part of default analytics behavior of the AI engine
+extraAnalytics = False  # Disable aggressive analytics behavior of the AI engine
 
 payload = {
     "promptText": prompt,
@@ -32,7 +32,7 @@ payload = {
     "numCandidates": numGens,
     "genCreativity": creativity,
     "priorCode": metaCode,
-    "enableAnalytics": doAnalytics,
+    "extraAnalytics": extraAnalytics,
 }
 
 try:

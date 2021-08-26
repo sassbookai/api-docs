@@ -17,7 +17,7 @@ const length = 90; // Defaults to 50, minimum 20, maximum capped at Premium plan
 const numGens = 3; // Desired number of candidate generations for this call
 const creativity = "var_high"; // Prefer more predictable, conservative, completions
 const metaCode = ""; // Encoded genMetaCode from the previous generation or empty
-const doAnalytics = false; // Disable part of default analytics behavior of the AI engine
+const extraAnalytics = false; // Disable aggressive analytics behavior of the AI engine
 
 // Prepare JSON data to post
 const postData = {
@@ -27,7 +27,7 @@ const postData = {
   numCandidates: numGens,
   genCreativity: creativity,
   priorCode: metaCode,
-  enableAnalytics: doAnalytics,
+  extraAnalytics: extraAnalytics,
   seed: 34028,
 };
 

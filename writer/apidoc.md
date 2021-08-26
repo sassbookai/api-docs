@@ -109,12 +109,12 @@
     This code is intended to be used for related generations but could be used
     for new completions in related contexts. Depending on your application
     domain, you may choose to use it or not, subject to its observed impact on
-    the quality of generations. **See `enableAnalytics`**.
+    the quality of generations. **See `extraAnalytics`**.
 
-    __`enableAnalytics=[boolean]`__ `optional`
+    __`extraAnalytics=[boolean]`__ `optional`
 
-    Sassbook AI's analytics engine performs AI analytics on the input data
-    to further improve quality of generations. This is enabled by default
+    Sassbook AI's analytics engine performs additional AI analytics on the input
+     data to further improve quality of generations. This is enabled by default
     (`true`). Supply `false` to disable part of it in case it works better for
     some of your application scenarios.
 
