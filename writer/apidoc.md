@@ -82,7 +82,7 @@
         
     This parameter influences the style of generated text. Possible values are:
 
-    (`var_low`, `var_,medium`, `var_high`). The default fallback value is `var_medium`
+    (`var_low`, `var_,medium`, `var_high`). The default fallback value is `var_medium`.
     
     `var_low` tends to generate more predicable, conservative text best suited to
     factual content. `var_high` produces more imaginative content, more beneficial
