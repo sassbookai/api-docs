@@ -96,7 +96,7 @@
     "AI content generator and AI text summarizer subscription plans"), which
     is currently six(**6**).
  
-    The [Sassbook AI Developer APO plan](https://sassbook.com/developer-api
+    The [Sassbook AI Developer API plan](https://sassbook.com/developer-api
     "AI content generator and AI text summarizer developer API plan") also
     has the same limit. 
     
