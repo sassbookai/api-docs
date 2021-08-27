@@ -118,8 +118,13 @@
     (`true`). Supply `false` to disable part of it in case it works better for
     some of your application scenarios.
 
-    The API _will not_ return the `prevCode` value if this parameter is
-    `false`. **See `prevCode`**.
+    __`seed=[number]`__ `optional`
+    The number (integer) supplied for this parameter causes your generations to
+    potentially vary, everything else remaining the same. Conversely,
+    generations can be made repeatable if you supply the same seed, though not
+    guaranteed.
+
+    The seed is typically set as integer in the range 0-1000000.
 
 * **Success Response:**
   
@@ -129,7 +134,7 @@
     ```
     {
       generations: [<array of candidate generations of length genLength>],
-      genMetaCode: <Code returned by the API, see prevCode API parameter, if any>,
+      genMetaCode: <Code returned by the API, see 'priorCode' API parameter, if any>,
       genMessage: <an informational message from the API>,
       genDbId: <an internal reference to the API call that can be used to analyze issues>,
       genTime: <The time spent on the generate API call>,
@@ -165,15 +170,13 @@
     curl -i -X POST  -H "Content-Type: application/json; charset=UTF-8" \
     -H Accept: 'application/json; charset=UTF-8', \
     -H "Authorization: Bearer $API_KEY" \
-    -d '{ "promptText": "'"$text"'", "priorText": "", "genLength": 90, "numCandidates": 3, "genCreativity": "var_low",  "priorCode": "" }' \
+    -d '{ "promptText": "'"$text"'", "priorText": "", "genLength": 90, "numCandidates": 3, "genCreativity": "var_low",  "priorCode": "", "seed": 1234 }' \
   https://sassbook.com/api/ext/generate/v1
    
     ```
-    Note: In the example above , although `targetPercent` is supplied, it will be ignored because
-    `target` is specified as `words` and `targetWords` will be honored.
-    
-    The [samples](./samples) directory has minimal examples in JavaScript and Python (3).
-    
+
+The [samples](./samples) directory has minimal examples in JavaScript and Python (3).
+
 * **Notes:**
 
 1. Sassbook AI webapp subscription users are entitled to monthly API credits as subscription benefits. They can request an API key from the Account page.
