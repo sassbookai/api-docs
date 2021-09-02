@@ -1,20 +1,21 @@
 **Sassbook AI Summarizer API**
 ----
-  The API enables developers to access similar functionality as that available with 
-  the web application. The API provides a controllable interface to state-of-the-art summarization for 
-  customers needing automation of their workflows.
+  The API enables developers to access similar functionality as that available
+   with the [AI text summary generator web application](https://sassbook.com/ai-summarizer
+   "AI summary generator supporting both extractive and abstractive summarization").
+  [The text summarization API](https://sassbook.com/ai-text-summarizer-api
+"Sassbook AI Text summarizer API is the most advanced API automatic text summarization.") provides a controllable interface to state-of-the-art text summarization for customers needing full automation of their workflows.
   
-  
-* **Endoint**
+* **Endpoint**
 
-  `/api/ext/summarize/v1`
+  __`/api/ext/summarize/v1`__
   
   The base URL is https://sassbook.com.
 
 * **Method:**
   
   
-  `POST`
+  __`POST`__
   
 *  **Authorization required**  
 
@@ -27,8 +28,8 @@
   
     ```
     {
-      Content-type: 'application/json',
-      Accept: 'application/json',
+      Content-type: 'application/json; ; charset=UTF-8',
+      Accept: 'application/json; charset=UTF-8',
       Authorization: 'Bearer <API Key>'
     }
     ```
@@ -45,14 +46,14 @@
     
     
     
-    `sumSrc=[string]`
+    __`sumSrc=[string]`__
     
     Text to be summarized. Must be plain text,  utf-8 encoded.
     
     Must be empty if a hash value from a previous call is supplied. See **srcHash**.
     
     
-    `srcHash=[string]`
+    __`srcHash=[string]`__
     
     A hash value returned from a previously post. Must be empty if `sumSrc` is set.
     
@@ -67,7 +68,7 @@
     One or the other of `sumSrc` and `srcHash` is always required.
   
   
-    `method=[string]`
+    __`method=[string]`__
         
     The summarization algorithm variant. Possible values are: `abstractive` and `extractive`.
     Could be shortened to `abs` and `ext` respectively. Default is `abstractive`.
@@ -85,13 +86,13 @@
     specified separately in `targetWords` and `targetPercent` respectively.
     
     
-    `targetWords=[number]`
+    __`targetWords=[number]`__
         
     This is the desired number of words in the summary when the `target` is specified
     as `words`. Note that the actual number of words may differ considerably depending
     on the original text and method of summarization.
     
-    `targetPercent=[number]`
+    __`targetPercent=[number]`__
         
     This is the desired size/length of summary when the `target` is specified
     as `percent`. Note that the actual length as a percentage of original text
@@ -115,7 +116,7 @@
     
 
   * **Code:** 204 <br />
-    This happens when you supply a hash but the API is unable to locate the original
+    This happens when you supply a hash, but the API is unable to locate the original
     source text. You should check for this code and call again with the original text.
  
 * **Error Response:**
@@ -146,10 +147,11 @@
     API_KEY="...."
     text="..."
     
-    curl -i -X POST  -H "Content-Type: application/json"  \
+    curl -i -X POST  -H "Content-Type: application/json; charset=UTF-8" \
+    -H Accept: 'application/json; charset=UTF-8', \
     -H "Authorization: Bearer $API_KEY" \
     -d '{"sumSrc": "'"$text"'", "target": "words", "method": "abstractive", "targetPercent": 10, "targetWords": 80}' \
-    https://sassbook.com/api/ext/summarize/v1a
+    https://sassbook.com/api/ext/summarize/v1
    
     ```
     Note: In the example above , although `targetPercent` is supplied, it will be ignored because
@@ -162,5 +164,7 @@
     1. The API currently favors summarization in the range of 5-40%, so internal adjustments are in place
     to limit larger values that cause summarization to lose its value.
     
-    2. The actual length of summary is likely to be closer to specified for large documents.  For small documents, the
-    AI doesn't have much room, so the summary length can be quite different.
+    2. The actual length of summary is likely to be closer to specified for
+    large documents.
+    For small documents, the AI doesn't have much room, so the summary length
+    can be quite different.
