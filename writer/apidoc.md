@@ -1,6 +1,6 @@
 **Sassbook AI Writer API**
 ----
-[Sassbook AI Writer API](https://sassbook.com/developer-api
+[Sassbook AI Writer API](https://sassbook.com//ai-text-generator-api
 "Sassbook AI Content Generator API is the most advanced API for automatic text generation using modern AI.") (the AI content generator API) enables developers to access
   similar functionality as that available with the [Sassbook AI Writer web application](https://sassbook.com/ai-writer "AI text content generator for rapid content generation using modern AI"). The API provides a controllable interface to state-of-the-art AI content generation for customers needing automation of their workflows.
   
