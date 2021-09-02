@@ -3,7 +3,7 @@
   The API enables developers to access similar functionality as that available
    with the [AI text summary generator web application](https://sassbook.com/ai-summarizer
    "AI summary generator supporting both extractive and abstractive summarization").
-  [The text summarization API](https://sassbook.com/developer-api
+  [The text summarization API](https://sassbook.com/ai-text-summarizer-api
 "Sassbook AI Text summarizer API is the most advanced API automatic text summarization.") provides a controllable interface to state-of-the-art text summarization for customers needing full automation of their workflows.
   
 * **Endpoint**
