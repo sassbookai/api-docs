@@ -8,7 +8,7 @@ to the corresponding web applications featuring advanced AI:
 
 * [Sassbook AI Text Summarizer API](https://sassbook.com/ai-text-summarizer-api "AI summary generator API supporting both extractive and abstractive summarization") supporting abstractive and extractive summarization. The [documentation and code samples](./summarizer) are in the [`summarizer`](./summarizer) directory.
 
-* [Sassbook AI Writer](https://sassbook.com/ai-text-generator-api "AI content generator API for full content generation automation") provides full automation for your dynamic content generation workflows and application using advanced AI. The [documentation and code samples](./writer) are in the [`writer`](./writer) directory.
+* [Sassbook AI Writer API](https://sassbook.com/ai-text-generator-api "AI content generator API for full content generation automation") provides full automation for your dynamic content generation workflows and applications using advanced AI. The [documentation and code samples](./writer) are in the [`writer`](./writer) directory.
   
 * [Sassbook AI Developer API plan](https://sassbook.com/developer-api "AI text content generator API and AI text summarizer API for content automation") provides
   access to both AI text content generation and AI text summarization API, with pricing based on usage (metered). 
