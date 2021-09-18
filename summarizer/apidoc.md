@@ -28,7 +28,7 @@
   
     ```
     {
-      Content-type: 'application/json; ; charset=UTF-8',
+      Content-type: 'application/json; charset=UTF-8',
       Accept: 'application/json; charset=UTF-8',
       Authorization: 'Bearer <API Key>'
     }
