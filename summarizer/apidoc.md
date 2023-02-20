@@ -74,7 +74,7 @@
     Could be shortened to `abs` and `ext` respectively. Default is `abstractive`.
     
     
-    `target=[string]`
+    __`target=[string]`__
         
     The target size of summarization. This could be expressed in two ways:
     
@@ -97,6 +97,8 @@
     This is the desired size/length of summary when the `target` is specified
     as `percent`. Note that the actual length as a percentage of original text
     could differ considerably depending on the original text and method of summarization.
+    
+    See notes at the bottom of this page for more information about this.
 
 * **Success Response:**
   
@@ -161,8 +163,9 @@
     
   * **Notes:**
 
-    1. The API currently favors summarization in the range of 5-40%, so internal adjustments are in place
+    1. The API currently favors summarization in the range of 5-40% for abstractive, so internal adjustments are in place
     to limit larger values that cause summarization to lose its value.
+    However, for extractive summarization, the range is much larger - up to 90%.
     
     2. The actual length of summary is likely to be closer to specified for
     large documents.
