@@ -19,8 +19,10 @@ to the corresponding web applications featuring advanced AI:
 
 [Sassbook AI Writer](https://sassbook.com/ai-writer "Sassbook AI Writer web application featuring state-of-the-art automatic content generation")
 
-[Sassbook AI Story Writer](https://sassbook.com/ai-story-writer "Sassbook AI Story Writeris the number one web application for story writing assistance")
+[Sassbook AI Story Writer](https://sassbook.com/ai-story-writer "Sassbook AI Story Writer is the number one web application for AI story writing assistance")
 
 [Sassbook AI Text Summarizer](https://sassbook.com/ai-summarizer "Sassbook AI Text Summarizer web application featuring state-of-the-art automatic text summarization")
+
+[Sassbook AI Headline Generator](https://sassbook.com/ai-headline-generator "Sassbook AI Headline Generator web application featuring advanced AI to automate headline, title, and tagline generation from your documents.")
 
 [Sassbook AI](https://sassbook.com "AI Summarizer, AI Headline Generator, AI Writer, and AI Story Writer - State-of-the-art Content Automation with AI")
