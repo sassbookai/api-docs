@@ -54,11 +54,11 @@ full automation of their workflows.
     
     Must be empty if a hash value from a previous call is supplied. See **srcHash**.
     
-    
+    _The number of words in `hlSrc` must not exceed 800. See notes at the bottom of this page for more details._
+        
     __`srcHash=[string]`__
     
     A hash value returned from a previously post. Must be empty if `hlSrc` is set.
-    
     
     If you make multiple API calls with the same original text, but with different
     settings, it is more efficient to just use the hash for subsequent calls. You
@@ -82,7 +82,7 @@ full automation of their workflows.
     __`target=[string]`__
         
     The target length of generated headlines. Four 'named' length values are currently supported. Note that
-    this is a suggestion and not all generated headlines will necessarily honor the the length.
+    this is a suggestion and not all generated headlines will necessarily honor the length.
     
     From shortest to longest, they are:
     
@@ -92,7 +92,7 @@ full automation of their workflows.
         
     __`numHeadlines=[number]`__
         
-    This is the desired number of headlines to be generated for this call. Supportted values are in the range
+    This is the desired number of headlines to be generated for this call. Supported values are in the range
     1-10. Default is 2.
     
     __`seed=[number]`__
@@ -143,7 +143,7 @@ full automation of their workflows.
 * **Sample Call:**
 
   The API can be called asynchronously. For example, in JavaScript, a promise is returned, which 
-  can be awaited on and JSON data can be extracted from the response as usual.
+  can be awaited on, and JSON data can be extracted from the response as usual.
   
   Here is a bash snippet illustrating the call, which you can easily translate into your favorite
   programming language.
@@ -164,10 +164,11 @@ full automation of their workflows.
     
   * **Notes:**
 
-    1. The API currently favors summarization in the range of 5-40%, so internal adjustments are in place
-    to limit larger values that cause summarization to lose its value.
+    * If you have longer documents, use the Summarizer API to bring down the word count below 800. In
+    practice, an abstract might work better for this use case.
     
-    2. The actual length of summary is likely to be closer to specified for
-    large documents.
-    For small documents, the AI doesn't have much room, so the summary length
-    can be quite different.
+    * For very large documents, using a two-step summarization workflow that involves
+    first using the extractive summarization mode followed by the abstractive mode
+    will speed up the process.
+    
+    
