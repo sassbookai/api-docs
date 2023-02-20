@@ -1,6 +1,6 @@
 # Basic Sassbook AI Headline Generator API usage in JavaScript (Node.js)
 The API is intended to be used from server-side.
-Uses the `node-fetch` package.
+Uses the `node-fetch` package (v3.x).
 ```
 npm install
 ```
