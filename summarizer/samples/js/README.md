@@ -14,8 +14,8 @@ To test the API, replace the placeholder API key in source code and run:
 node test.js
 ```
 [Sassbook AI Text Summary Generator API](https://sassbook.com/developer-api
-"Sassbook AI's text summary generator uses advanced AI for both abstractive and extractive summarization")
+"Sassbook AI's text summary generator API uses advanced AI for both abstractive and extractive summarization")
 
 [Sassbook AI Summarizer](https://sassbook.com/ai-summarizer "AI summary generator supporting both extractive and abstractive summarization")
 
-[Sassbook AI](https://sassbook.com "Sassbook AI Summarizer and AI Writer - State-of-the-art Content Automation with AI")
+[Sassbook AI](https://sassbook.com "Sassbook AI Summarizer,AI Writer, AI Story Writer, and AI Headline Generator - State-of-the-art Content Automation with AI")
