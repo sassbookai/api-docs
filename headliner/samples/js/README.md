@@ -13,4 +13,4 @@ node test.js
 
 [Sassbook AI Headline Generator](https://sassbook.com/ai-headline-generator "AI title generator application for automatically creating titles, taglines, and headlines from text content")
 
-[Sassbook AI](https://sassbook.com "Sassbook AI Summarizer and AI Writer - State-of-the-art Content Automation with AI")
+[Sassbook AI](https://sassbook.com "Sassbook AI Summarizer, AI Writer, AI Story Writer, AI Headline Generator - State-of-the-art Content Automation with AI")
